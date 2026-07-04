@@ -1,0 +1,157 @@
+### Test API
+GET http://localhost:8080/api/tasks/test
+
+###
+
+### Create Task
+POST http://localhost:8080/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Finish TaskFlow",
+    "description": "Complete the Spring Boot backend",
+    "priority": "HIGH",
+    "status": "TODO",
+    "dueDate": "2026-07-15"
+}
+
+### Update Task
+PUT http://localhost:8080/api/tasks/1
+Content-Type: application/json
+
+{
+    "title": "Complete TaskFlow Backend",
+    "description": "CRUD API is almost complete",
+    "priority": "CRITICAL",
+    "status": "IN_PROGRESS",
+    "dueDate": "2026-07-31"
+}
+
+### Delete Task
+DELETE http://localhost:8080/api/tasks/3
+
+### Testing file not found exception
+GET http://localhost:8080/api/tasks/999
+
+### Null testing
+POST http://localhost:8080/api/tasks
+Content-Type: application/json
+
+{
+  "title": "",
+  "description": "",
+  "priority": null,
+  "status": null,
+  "dueDate": "2024-01-01"
+}
+
+### First 5 tasks
+GET http://localhost:8080/api/tasks
+
+### Next 5
+GET /api/tasks?page=1
+
+### Sort by title
+GET /api/tasks?sort=title
+
+### Sort by due date
+GET /api/tasks?sort=dueDate
+
+### Register User
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+    "firstName": "Katlego",
+    "lastName": "Motau",
+    "email": "katlego@example.com",
+    "password": "Password123"
+}
+
+### Login
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+    "email":"katlego@example.com",
+    "password":"Password123"
+}
+
+### Login Test
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+    "email":"katlego@example.com",
+    "password":"Password123"
+}
+
+### Login with token
+GET http://localhost:8080/api/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXRsZWdvQGV4YW1wbGUuY29tIiwiaWF0IjoxNzgzMDM4Nzg2LCJleHAiOjE3ODMxMjUxODZ9.RPSfDlkvmcT6WeQNZL4aN8q0NK-dwJ-owQQmC7PGrpQ
+
+
+### Testing
+### Login
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "katlego@example.com",
+    "password": "Password123"
+}
+
+###
+
+### Get Tasks
+GET http://localhost:8080/api/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXRsZWdvQGV4YW1wbGUuY29tIiwiaWF0IjoxNzgzMDgyODczLCJleHAiOjE3ODMxNjkyNzN9.V4v_t2Xmrw0mGKdQJB_f5cyykW3WWdizCWL-DFyq6pw
+
+###
+
+### 
+GET http://localhost:8080/api/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXRsZWdvQGV4YW1wbGUuY29tIiwiaWF0IjoxNzgzMDgyODczLCJleHAiOjE3ODMxNjkyNzN9.V4v_t2Xmrw0mGKdQJB_f5cyykW3WWdizCWL-DFyq6pw
+
+
+GET http://localhost:8080/api/admin/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXRsZWdvQGV4YW1wbGUuY29tIiwiaWF0IjoxNzgzMDgyODczLCJleHAiOjE3ODMxNjkyNzN9.V4v_t2Xmrw0mGKdQJB_f5cyykW3WWdizCWL-DFyq6pw
+
+
+
+
+
+### Login Test
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+    "email":"katlego@example.com",
+    "password":"Password123"
+}
+
+###
+POST http://localhost:8080/api/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXRsZWdvQGV4YW1wbGUuY29tIiwiaWF0IjoxNzgzMTEyOTMxLCJleHAiOjE3ODMxOTkzMzF9.LGj_9F6DEdkab5SwPcdKh2UmyzE68iqh6_E0KfhoMbw
+Content-Type: application/json
+
+{
+    "title": "LLet's Finish TaskFlow Backend",
+    "description": "Finish implementing the REST API and security.",
+    "priority": "HIGH",
+    "status": "IN_PROGRESS",
+    "dueDate": "2026-07-15"
+}
+
+###
+POST http://localhost:8080/api/tasks/test
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXRsZWdvQGV4YW1wbGUuY29tIiwiaWF0IjoxNzgzMTEyMDA3LCJleHAiOjE3ODMxOTg0MDd9.gkgQa33InTAdY80OF_wxhiPgvGQNzvOHXLjk9KA-5-E
+
+###
+GET http://localhost:8080/api/tasks/whoami
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXRsZWdvQGV4YW1wbGUuY29tIiwiaWF0IjoxNzgzMTEwMjUyLCJleHAiOjE3ODMxOTY2NTJ9.h0EXo2_HRiPQ2RJ_HHN-40dulwk7JLZW2Nz0hvVsbjw
+
+
+###
+POST http://localhost:8080/api/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrYXRsZWdvQGV4YW1wbGUuY29tIiwiaWF0IjoxNzgzMTEwNjYxLCJleHAiOjE3ODMxOTcwNjF9.5j9cMgAc_C19d6QuLf3tE_b5zyfRo76ULmoURp4uTEE
