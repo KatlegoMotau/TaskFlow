@@ -10,11 +10,28 @@ This project was developed to demonstrate my backend development skills, REST AP
 
 
 # Register
-# Login 
-# Dashboard 
-# Create Task
-# Tasks 
+---
+  ![image alt](https://github.com/KatlegoMotau/TaskFlow/blob/b2e2081bfa27248d40e640af48c8351bc108f0e2/screenshots/register.png)
+---
 
+# Login 
+---
+![image alt](https://github.com/KatlegoMotau/TaskFlow/blob/b2e2081bfa27248d40e640af48c8351bc108f0e2/screenshots/login.png)
+---
+
+# Dashboard 
+---
+![image alt](https://github.com/KatlegoMotau/TaskFlow/blob/b2e2081bfa27248d40e640af48c8351bc108f0e2/screenshots/dashboard.png)
+---
+
+# Create Task
+---
+![image alt](https://github.com/KatlegoMotau/TaskFlow/blob/b2e2081bfa27248d40e640af48c8351bc108f0e2/screenshots/create%20task.png)
+---
+
+# Tasks 
+---
+![image alt](https://github.com/KatlegoMotau/TaskFlow/blob/b2e2081bfa27248d40e640af48c8351bc108f0e2/screenshots/tasks.png)
 ---
 
 # ✨ Features
