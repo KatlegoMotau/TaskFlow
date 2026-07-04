@@ -8,15 +8,12 @@ This project was developed to demonstrate my backend development skills, REST AP
 
 ## 📸 Screenshots
 
-> *(Add screenshots here after uploading them to GitHub)*
 
-| Login | Dashboard |
-|-------|-----------|
-| *(Image)* | *(Image)* |
-
-| Tasks | Export |
-|-------|--------|
-| *(Image)* | *(Image)* |
+# Register
+# Login 
+# Dashboard 
+# Create Task
+# Tasks 
 
 ---
 
